@@ -199,7 +199,7 @@ function Home() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to explore our magical creations?
           </h2>
-          <p className="max-w-2xl mx-auto text-lg mb-8">
+          <p className="max-w-2xl mx-auto text-lg mb-8 opacity-90">
             Discover how our apps can enhance your daily life with innovative
             features and intuitive design.
           </p>
@@ -207,7 +207,7 @@ function Home() {
             <Link to="/apps" className="btn btn-secondary">
               View Our Apps
             </Link>
-            <Link to="/contact" className="btn bg-primary-content text-primary">
+            <Link to="/contact" className="btn btn-outline btn-secondary">
               Contact Us
             </Link>
           </div>
