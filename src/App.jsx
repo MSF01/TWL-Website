@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Apps from "./pages/Apps";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/apps" element={<Apps />} /> */}
+          <Route path="/apps" element={<Apps />} />
           {/* <Route path="/contact" element={<Contact />} /> */}
         </Routes>
       </main>
