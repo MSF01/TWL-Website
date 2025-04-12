@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -180,7 +181,13 @@ function Apps() {
               </ul>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="btn btn-primary">Download Now</button>
+                <Link
+                  to="https://play.google.com/store/apps/details?id=com.safely360.techwizardlabs"
+                  className="btn btn-primary"
+                  target="_blank"
+                >
+                  Download Now
+                </Link>
                 <button className="btn btn-outline">Learn More</button>
               </div>
             </div>
@@ -327,7 +334,9 @@ function Apps() {
           <p className="max-w-2xl mx-auto text-lg mb-8">
             Download Safely360 today and stay connected with your loved ones.
           </p>
-          <button className="btn btn-secondary btn-lg">Download Now</button>
+          <Link to="https://example.com" className="btn btn-secondary btn-lg">
+            Download Now
+          </Link>
         </div>
       </section>
     </div>

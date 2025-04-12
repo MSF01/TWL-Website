@@ -1,3 +1,4 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
@@ -8,6 +9,7 @@ import About from "./pages/About";
 import Apps from "./pages/Apps";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import PrivacyPolicySmokeCount from "./pages/PrivacyPolicySmokeCount";
 
 function App() {
   return (
@@ -20,9 +22,14 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/apps" element={<Apps />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route
             path="/privacy-policy-for-safely360"
             element={<PrivacyPolicy />}
+          />
+          <Route
+            path="/privacy-policy-smokecount"
+            element={<PrivacyPolicySmokeCount />}
           />
         </Routes>
       </main>
